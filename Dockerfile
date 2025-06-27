@@ -13,11 +13,10 @@ RUN \
 
 RUN php -m
 
-LABEL \
-  org.opencontainers.image.title "wordpress-extended" \
-  org.opencontainers.image.description "WordPress extended image with additional PHP extensions" \
-  org.opencontainers.image.url "https://github.com/tektrans/wordpress-extended" \
-  org.opencontainers.image.source "https://github.com/tektrans/wordpress-extended" \
-  org.opencontainers.image.authors "adhisimon@tektrans.id" \
-  org.opencontainers.image.vendor "TEKTRANS" \
-  org.opencontainers.image.licenses "gpl3" 
+LABEL org.opencontainers.image.title="wordpress-extended" 
+LABEL org.opencontainers.image.description "WordPress extended image with additional PHP extensions"
+LABEL org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended"
+LABEL org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended"
+LABEL org.opencontainers.image.authors="adhisimon@tektrans.id"
+LABEL org.opencontainers.image.vendor="TEKTRANS"
+LABEL org.opencontainers.image.licenses="gpl3"
