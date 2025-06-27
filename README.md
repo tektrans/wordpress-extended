@@ -1,7 +1,17 @@
 # wordpress-extended
-WordPress extended image with additional PHP extensions
+Unofficial WordPress extended container image with additional PHP extensions
 
-Based on: docker.io/wordpress:6.8.1-php8.4-apache
+Based on: [docker.io/wordpress:6.8.1-php8.4-apache](https://hub.docker.com/_/wordpress)
+
+```shell
+podman pull ghcr.io/tektrans/wordpress-extended:php8.4
+```
+
+or if you are using docker:
+
+```shell
+docker pull ghcr.io/tektrans/wordpress-extended:php8.4
+```
 
 ## Additional extensions
 * memcache
