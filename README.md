@@ -14,9 +14,12 @@ docker pull ghcr.io/tektrans/wordpress-extended:php8.4
 ```
 
 ## Additional extensions
+* ftp
 * memcache
 * memcached
 * redis
+* sockets
+* ssh2
 
 ## Full list of extensions/modules
 See [full-list-of-extensions.txt](full-list-of-extensions.txt) file.

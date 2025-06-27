@@ -8,6 +8,7 @@ dom
 exif
 fileinfo
 filter
+ftp
 gd
 hash
 iconv
@@ -32,9 +33,11 @@ redis
 Reflection
 session
 SimpleXML
+sockets
 sodium
 SPL
 sqlite3
+ssh2
 standard
 tokenizer
 xml
