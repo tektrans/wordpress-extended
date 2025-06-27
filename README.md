@@ -3,6 +3,12 @@ Unofficial WordPress extended container image with additional PHP extensions
 
 Based on: [docker.io/wordpress:6.8.1-php8.4-apache](https://hub.docker.com/_/wordpress)
 
+Our release image:
+```
+ghcr.io/tektrans/wordpress-extended:php8.4
+```
+
+If you are using podman, you can pull it by:
 ```shell
 podman pull ghcr.io/tektrans/wordpress-extended:php8.4
 ```
@@ -13,7 +19,10 @@ or if you are using docker:
 docker pull ghcr.io/tektrans/wordpress-extended:php8.4
 ```
 
-## Additional extensions
+## How to use it
+See https://hub.docker.com/_/wordpress
+
+## Additional extensions included on this container image
 * ftp
 * memcache
 * memcached
