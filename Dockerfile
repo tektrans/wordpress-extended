@@ -1,0 +1,17 @@
+FROM docker.io/wordpress:6.8.1-php8.4-apache
+
+ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
+
+RUN \
+  install-php-extensions redis memcache memcached
+
+RUN php -m
+
+LABEL \
+  org.opencontainers.image.title="wordpress-extended" \
+  org.opencontainers.image.description="WordPress extended image with additional PHP extensions" \
+  org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended" \
+  org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended" \
+  org.opencontainers.image.authors="adhisimon@tektrans.id" \
+  org.opencontainers.image.vendor="TEKTRANS" \
+  org.opencontainers.image.licenses="gpl3" 
