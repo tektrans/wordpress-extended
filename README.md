@@ -23,6 +23,7 @@ docker pull ghcr.io/tektrans/wordpress-extended:php8.4
 See https://hub.docker.com/_/wordpress
 
 ## Additional extensions included on this container image
+We add these PHP extensions to official WordPress container image:
 * ftp
 * memcache
 * memcached
@@ -31,7 +32,8 @@ See https://hub.docker.com/_/wordpress
 * ssh2
 
 ## Full list of extensions/modules
-See [full-list-of-extensions.txt](full-list-of-extensions.txt) file.
+See [full-list-of-extensions.txt](full-list-of-extensions.txt) file
+(from official WordPress container image and our added extensions).
 
 ## Need more extensions?
 Please submit a [new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
