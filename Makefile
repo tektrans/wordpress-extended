@@ -1,3 +1,5 @@
+all: build publish
+
 build:
 	echo building...
 	podman build -t ghcr.io/tektrans/wordpress-extended:php8.4 .
