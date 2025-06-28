@@ -1,10 +1,12 @@
+TAG := ghcr.io/tektrans/wordpress-extended:php8.4
+
 all: build publish
 
 build:
 	echo '** BUILDING...'
-	podman build --pull=newer -t ghcr.io/tektrans/wordpress-extended:php8.4 . && \
-	podman run --rm ghcr.io/tektrans/wordpress-extended:php8.4 php -m > full-list-of-extensions.txt
+	podman build --pull=newer -t $(TAG) . && \
+	podman run --rm $(TAG) php -m > full-list-of-extensions.txt
 
 publish:
 	echo '** PUBLISHING...'
-	podman push ghcr.io/tektrans/wordpress-extended:php8.4
+	podman push $(TAG)
