@@ -19,6 +19,27 @@ or if you are using docker:
 docker pull ghcr.io/tektrans/wordpress-extended:php8.4
 ```
 
+## Background motivation
+Why we create this container image?
+
+It started when we move our customer's wordpress site from a VM on a cloud provider
+to our infrastrucure.
+
+We don't like to create a new VM with traditional PHP stack.
+We love container and fortunately there is a 
+[WordPress docker official image](https://hub.docker.com/_/wordpress).
+
+That official image is very minimalist. No blame for that.
+That was a philosophy of containerization.
+But we need some PHP extensions which are not included on that container.
+
+Official image provide instruction how to extends the container
+to add some extensions and we do that.
+
+We just want to share the container we produced.
+Maybe it can be usefull for some people.
+Here it is.
+
 ## How to use it
 See https://hub.docker.com/_/wordpress
 
