@@ -58,3 +58,17 @@ See [full-list-of-extensions.txt](full-list-of-extensions.txt) file
 
 ## Need more extensions?
 Please submit a [new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
+
+## Note
+This container image produced and maintained by
+[PT TEKNOLOGI TRANSAKSI DIGITAL (TEKTRANS)](https://tektrans.id).
+
+We don't have any affiliate with 
+[Automattic](https://automattic.com/)
+and
+[WordPress Foundation](https://wordpressfoundation.org/)
+who owns and oversees the trademark for the names of WordPress.
+
+Please feel free to use this container image but we have no responsibility neither support.
+Any questions please be sent by opening a
+[new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
