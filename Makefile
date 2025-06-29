@@ -10,3 +10,7 @@ build:
 publish:
 	echo '** PUBLISHING...'
 	podman push $(TAG)
+
+clean:
+  echo '** REMOVING OLD LOCAL IMAGE...'
+	podman image rm $(TAG)
