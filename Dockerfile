@@ -1,7 +1,8 @@
 FROM docker.io/wordpress:6.8.1-php8.4-apache
 
-RUN apt update
-RUN apt upgrade
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt update && apt upgrade -y
 
 ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
@@ -15,6 +16,8 @@ RUN \
     ssh2
 
 RUN php -m
+
+RUN apt clean
 
 LABEL org.opencontainers.image.title="wordpress-extended" 
 LABEL org.opencontainers.image.description="WordPress extended image with additional PHP extensions"
