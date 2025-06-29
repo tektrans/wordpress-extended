@@ -1,3 +1,4 @@
+FROM := docker.io/wordpress:6.8.1-php8.4-apache
 TAG := ghcr.io/tektrans/wordpress-extended:php8.4
 
 all:
@@ -5,7 +6,7 @@ all:
 
 build:
 	echo '** BUILDING...'
-	podman build --pull=newer -t $(TAG) . && \
+	podman build --pull=newer -t $(TAG) --build-arg FROM=$(FROM) . && \
 	podman run --rm $(TAG) php -m > full-list-of-extensions.txt
 
 publish:
@@ -13,5 +14,4 @@ publish:
 	podman push $(TAG)
 
 clean:
-  echo '** REMOVING OLD LOCAL IMAGE...'
 	podman image rm $(TAG)

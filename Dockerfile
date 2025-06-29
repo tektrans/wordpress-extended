@@ -1,4 +1,5 @@
-FROM docker.io/wordpress:6.8.1-php8.4-apache
+ARG FROM
+FROM ${FROM}
 
 ARG DEBIAN_FRONTEND=noninteractive
 
