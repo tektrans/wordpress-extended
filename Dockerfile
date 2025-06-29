@@ -20,10 +20,15 @@ RUN php -m
 
 RUN apt clean
 
+ARG CREATED
+ARG REVISION
+
 LABEL org.opencontainers.image.title="wordpress-extended" 
 LABEL org.opencontainers.image.description="WordPress extended image with additional PHP extensions"
 LABEL org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended"
+LABEL org.opencontainers.image.created="${CREATED}"
+LABEL org.opencontainers.image.revision="${REVISION}"
 LABEL org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended"
-LABEL org.opencontainers.image.authors="adhisimon@tektrans.id"
+LABEL org.opencontainers.image.authors="Adhidarma Hadiwinoto  <adhisimon@tektrans.id>"
 LABEL org.opencontainers.image.vendor="TEKTRANS"
 LABEL org.opencontainers.image.licenses="gpl3"
