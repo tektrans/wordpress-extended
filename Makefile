@@ -1,6 +1,7 @@
 TAG := ghcr.io/tektrans/wordpress-extended:php8.4
 
-all: build publish
+all:
+	make build && make publish
 
 build:
 	echo '** BUILDING...'
