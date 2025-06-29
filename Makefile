@@ -1,5 +1,8 @@
-FROM := docker.io/wordpress:6.8.1-php8.4-apache
-TAG := ghcr.io/tektrans/wordpress-extended:php8.4
+WP_VER=6.8.1
+PHP_VER=8.4
+
+FROM := docker.io/wordpress:$(WP_VER)-php$(PHP_VER)-apache
+TAG := ghcr.io/tektrans/wordpress-extended:php$(PHP_VER)
 
 all:
 	make build && make publish
