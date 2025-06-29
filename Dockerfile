@@ -1,5 +1,8 @@
 FROM docker.io/wordpress:6.8.1-php8.4-apache
 
+RUN apt update
+RUN apt upgrade
+
 ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
 RUN \
