@@ -3,7 +3,7 @@ FROM ${FROM}
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt upgrade -y && apt install libapache2-mod-security2 less
+RUN apt update && apt upgrade -y && apt -y install libapache2-mod-security2 less
 
 ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/releases/latest/download/install-php-extensions /usr/local/bin/
 
