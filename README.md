@@ -43,8 +43,13 @@ Here it is.
 ## How to use it
 See https://hub.docker.com/_/wordpress
 
-## Additional extensions included on this container image
-We add these PHP extensions to official WordPress container image:
+## Additional modules/extensions included on this container image
+We add some Apache2 module and PHP extensions on this container image.
+
+Additional Apache2 module:
+* libapache2-mod-security2
+
+Additional PHP extensions:
 * ftp
 * memcache
 * memcached
@@ -53,8 +58,8 @@ We add these PHP extensions to official WordPress container image:
 * ssh2
 
 ## Full list of extensions/modules
-See [full-list-of-extensions.txt](full-list-of-extensions.txt) file
-(from official WordPress container image and our added extensions).
+* [Installed Apache2 modules](apache2-modules.txt)
+* [Installed PHP extensions](php-extensions.txt)
 
 ## Need more extensions?
 Please submit a [new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
