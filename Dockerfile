@@ -21,12 +21,13 @@ RUN apt clean
 ARG CREATED
 ARG REVISION
 
-LABEL org.opencontainers.image.title="wordpress-extended" 
-LABEL org.opencontainers.image.description="WordPress extended image with additional PHP extensions"
-LABEL org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended"
-LABEL org.opencontainers.image.created="${CREATED}"
-LABEL org.opencontainers.image.revision="${REVISION}"
-LABEL org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended"
-LABEL org.opencontainers.image.authors="Adhidarma Hadiwinoto  <adhisimon@tektrans.id>"
-LABEL org.opencontainers.image.vendor="TEKTRANS"
-LABEL org.opencontainers.image.licenses="gpl3"
+LABEL \
+  org.opencontainers.image.title="wordpress-extended" \
+  org.opencontainers.image.description="WordPress extended image with additional PHP extensions" \
+  org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended" \
+  org.opencontainers.image.created="${CREATED}" \
+  org.opencontainers.image.revision="${REVISION}" \
+  org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended" \
+  org.opencontainers.image.authors="Adhidarma Hadiwinoto  <adhisimon@tektrans.id>" \
+  org.opencontainers.image.vendor="TEKTRANS" \
+  org.opencontainers.image.licenses="GPL-3.0-or-later"
