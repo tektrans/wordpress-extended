@@ -1,3 +1,6 @@
+Server version: Apache/2.4.62 (Debian)
+Server built:   2024-10-04T15:21:08
+
 Loaded Modules:
  core_module (static)
  so_module (static)
