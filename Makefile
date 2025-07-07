@@ -25,6 +25,7 @@ build:
 		--annotation=org.opencontainers.image.authors="Adhidarma Hadiwinoto <adhisimon@tektrans.id>" \
 		--annotation=org.opencontainers.image.vendor=TEKTRANS \
 		--annotation=org.opencontainers.image.licenses=gpl3 \
+		$(BUILD_ARGS) \
 		. && \
 	podman run --rm $(TAG) php -m > php-extensions.txt && \
 	podman run --rm $(TAG) apachectl -M > apache2-modules.txt 2>/dev/null
