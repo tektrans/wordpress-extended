@@ -16,7 +16,8 @@ RUN \
     sockets \
     ssh2
 
-RUN apt clean
+RUN apt clean && \
+  rm -rf /var/lib/apt/lists/*
 
 ARG CREATED
 ARG REVISION
