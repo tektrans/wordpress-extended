@@ -11,6 +11,8 @@ all:
 	make build && make publish
 
 build:
+	echo '** PULL BASE IMAGE...'
+	podman pull $(FROM)
 	echo '** BUILDING...'
 	podman build --pull=newer -t $(TAG) \
 		--build-arg FROM=$(FROM) \
