@@ -1,7 +1,7 @@
 # wordpress-extended
 Unofficial WordPress extended container image with additional PHP extensions
 
-Based on: [docker.io/wordpress:6.8.1-php8.4-apache](https://hub.docker.com/_/wordpress)
+Based on: [docker.io/wordpress:6-php8.4-apache](https://hub.docker.com/_/wordpress)
 
 Our release image:
 ```

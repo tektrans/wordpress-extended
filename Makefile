@@ -1,4 +1,4 @@
-WP_VER=6.8.2
+WP_VER=6
 PHP_VER=8.4
 
 FROM := docker.io/wordpress:$(WP_VER)-php$(PHP_VER)-apache
