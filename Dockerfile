@@ -14,9 +14,8 @@ RUN \
     memcached \
     redis \
     sockets \
-    ssh2
-
-RUN apt clean && \
+    ssh2 && \
+  apt clean && \
   rm -rf /var/lib/apt/lists/*
 
 ARG CREATED
