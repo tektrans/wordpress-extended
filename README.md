@@ -5,18 +5,18 @@ Based on: [docker.io/wordpress:6-php8.4-apache](https://hub.docker.com/_/wordpre
 
 Our release image:
 ```
-ghcr.io/tektrans/wordpress-extended:php8.4
+ghcr.io/tektrans/wordpress-extended
 ```
 
 If you are using podman, you can pull it by:
 ```shell
-podman pull ghcr.io/tektrans/wordpress-extended:php8.4
+podman pull ghcr.io/tektrans/wordpress-extended:latest
 ```
 
 or if you are using docker:
 
 ```shell
-docker pull ghcr.io/tektrans/wordpress-extended:php8.4
+docker pull ghcr.io/tektrans/wordpress-extended:latest
 ```
 
 ## Background motivation
