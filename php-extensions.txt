@@ -1,4 +1,4 @@
-PHP 8.4.10 (cli) (built: Jul  3 2025 22:57:42) (NTS)
+PHP 8.4.10 (cli) (built: Jul 22 2025 01:17:53) (NTS)
 Copyright (c) The PHP Group
 Built by https://github.com/docker-library/php
 Zend Engine v4.4.10, Copyright (c) Zend Technologies

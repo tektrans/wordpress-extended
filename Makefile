@@ -1,8 +1,11 @@
-WP_VER=6.8.1
+WP_VER=6.8.2
 PHP_VER=8.4
 
 FROM := docker.io/wordpress:$(WP_VER)-php$(PHP_VER)-apache
-TAG := ghcr.io/tektrans/wordpress-extended:php$(PHP_VER)
+OUTPUT_IMAGE := ghcr.io/tektrans/wordpress-extended
+
+TAG := $(OUTPUT_IMAGE):php$(PHP_VER)
+TAG_LATEST := $(OUTPUT_IMAGE):latest
 
 CREATED=`date --iso-8601=seconds -u`
 REVISION=`git rev-parse HEAD`
@@ -14,7 +17,9 @@ build:
 	echo '** PULL BASE IMAGE...'
 	podman pull $(FROM)
 	echo '** BUILDING...'
-	podman build --pull=newer -t $(TAG) \
+	podman build --pull=newer \
+		-t $(TAG) \
+		-t $(TAG_LATEST) \
 		--build-arg FROM=$(FROM) \
 		--build-arg CREATED=$(CREATED) \
 		--build-arg REVISION=$(REVISION) \
@@ -27,7 +32,7 @@ build:
 		--annotation=org.opencontainers.image.authors="Adhidarma Hadiwinoto <adhisimon@tektrans.id>" \
 		--annotation=org.opencontainers.image.vendor=TEKTRANS \
 		--annotation=org.opencontainers.image.licenses=gpl3 \
-		$(BUILD_ARGS) \
+		$(PODMAN_BUILD_ARGS) \
 		. && \
 	podman run --rm ${TAG} php --version > php-extensions.txt && \
 	echo >> php-extensions.txt && \
