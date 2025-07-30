@@ -44,6 +44,8 @@ build:
 publish:
 	echo '** PUBLISHING...'
 	podman push $(TAG)
+	podman push $(TAG_LATEST)
 
 clean:
 	podman image rm $(TAG)
+	podman image rm $(TAG_LATEST)
