@@ -13,10 +13,13 @@ REVISION=`git rev-parse HEAD`
 all:
 	make build && make publish
 
-build:
+pull-base:
 	echo '** PULL BASE IMAGE...'
 	podman pull $(FROM)
-	echo '** BUILDING...'
+
+build:
+	make pull-base && \
+	echo '** BUILDING...' &&\
 	podman build --pull=newer \
 		-t $(TAG) \
 		-t $(TAG_LATEST) \
