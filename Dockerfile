@@ -18,14 +18,12 @@ RUN \
   apt clean && \
   rm -rf /var/lib/apt/lists/*
 
-ARG CREATED
 ARG REVISION
 
 LABEL \
   org.opencontainers.image.title="wordpress-extended" \
   org.opencontainers.image.description="WordPress extended image with additional PHP extensions" \
   org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended" \
-  org.opencontainers.image.created="${CREATED}" \
   org.opencontainers.image.revision="${REVISION}" \
   org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended" \
   org.opencontainers.image.authors="Adhidarma Hadiwinoto  <adhisimon@tektrans.id>" \

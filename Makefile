@@ -7,7 +7,6 @@ OUTPUT_IMAGE := ghcr.io/tektrans/wordpress-extended
 TAG := $(OUTPUT_IMAGE):php$(PHP_VER)
 TAG_LATEST := $(OUTPUT_IMAGE):latest
 
-CREATED=`date --iso-8601=seconds -u`
 REVISION=`git rev-parse HEAD`
 
 all:
@@ -24,11 +23,9 @@ build:
 		-t $(TAG) \
 		-t $(TAG_LATEST) \
 		--build-arg FROM=$(FROM) \
-		--build-arg CREATED=$(CREATED) \
 		--build-arg REVISION=$(REVISION) \
 		--annotation=org.opencontainers.image.title=wordpress-extended \
 		--annotation=org.opencontainers.image.description="WordPress extended image with additional PHP extensions" \
-		--annotation=org.opencontainers.image.created="$(CREATED)" \
 		--annotation=org.opencontainers.image.revision="$(REVISION)" \
 		--annotation=org.opencontainers.image.url="https://github.com/tektrans/wordpress-extended" \
 		--annotation=org.opencontainers.image.source="https://github.com/tektrans/wordpress-extended" \
