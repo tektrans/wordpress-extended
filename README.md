@@ -33,7 +33,7 @@ We love container and fortunately there is a
 [WordPress docker official image](https://hub.docker.com/_/wordpress).
 
 That official image is very minimalist. No blame for that.
-That was a philosophy of containerization.
+That was one of philosophy on containerization.
 But we need some PHP extensions which are not included on that container.
 
 Official image provide instruction how to extends the container
@@ -80,3 +80,6 @@ who owns and oversees the trademark for the names of WordPress.
 Please feel free to use this container image but we have no responsibility neither support.
 Any questions please be sent by opening a
 [new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
+
+"Star" from you for this repository is very much appreciated,
+so we know someone use this container image happily.
