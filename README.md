@@ -46,6 +46,8 @@ Here it is.
 ## How to use it
 See https://hub.docker.com/_/wordpress
 
+You can also look at our ["Podman Quadlet example"](examples/quadlet/).
+
 ## Additional modules/extensions included on this container image
 We add some Apache2 module and PHP extensions on this container image.
 
@@ -81,5 +83,9 @@ Please feel free to use this container image but we have no responsibility neith
 Any questions please be sent by opening a
 [new issue](https://github.com/tektrans/wordpress-extended/issues/new/choose).
 
-"Star" from you for this repository is very much appreciated,
+A "star" from you for this repository is very much appreciated,
 so we know someone use this container image happily.
+
+We will try to update (rebuild) this container image periodically
+to sync with [upstream (docker.io/wordpress:6-php8.4-apache)](https://hub.docker.com/_/wordpress)
+and do "apt update/upgrade".

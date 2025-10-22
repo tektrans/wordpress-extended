@@ -1,0 +1,22 @@
+#
+# Please write this file as /etc/containers/systemd/wordpress-redis.container
+#
+
+[Unit]
+After=network-online.target
+
+[Container]
+ContainerName=wordpress-redis
+Pod=wordpress.pod
+Image=docker.io/redis:8
+
+# Change this line to your timezone
+Timezone=Asia/Jakarta
+
+# Enable podman auto-update on this container
+AutoUpdate=registry
+
+Volume=wordpress-redis:/data
+
+[Service]
+Restart=always

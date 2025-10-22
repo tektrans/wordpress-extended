@@ -1,0 +1,25 @@
+#
+# Please write this file as /etc/containers/systemd/wordpress.container
+#
+
+[Unit]
+After=network-online.target
+
+[Container]
+ContainerName=wordpress
+Image=ghcr.io/tektrans/wordpress-extended:php8.4
+
+# Change this line to your timezone
+Timezone=Asia/Jakarta
+
+# Enable podman auto-update on this container
+AutoUpdate=registry
+
+Volume=wordpress-data:/var/www/html
+PublishPort=18080:80
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

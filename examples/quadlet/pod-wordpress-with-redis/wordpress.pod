@@ -1,0 +1,9 @@
+#
+# Please write this file as /etc/containers/systemd/wordpress.pod
+#
+
+[Pod]
+PublishPort=18080:80
+
+[Install]
+WantedBy=default.target
