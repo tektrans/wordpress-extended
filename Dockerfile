@@ -10,8 +10,6 @@ ADD --chmod=0755 https://github.com/mlocati/docker-php-extension-installer/relea
 RUN \
   install-php-extensions \
     ftp \
-    memcache \
-    memcached \
     redis \
     sockets \
     ssh2 && \
