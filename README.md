@@ -56,8 +56,8 @@ Additional Apache2 module:
 
 Additional PHP extensions:
 * ftp
-* memcache
-* memcached
+* ~~memcache~~
+* ~~memcached~~
 * redis
 * sockets
 * ssh2
