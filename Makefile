@@ -1,5 +1,5 @@
 WP_VER=6
-PHP_VER=8.4
+PHP_VER=8.5
 
 FROM := docker.io/wordpress:$(WP_VER)-php$(PHP_VER)-apache
 OUTPUT_IMAGE := ghcr.io/tektrans/wordpress-extended
