@@ -1,4 +1,4 @@
-PHP 8.5.2 (cli) (built: Jan 16 2026 23:13:36) (NTS)
+PHP 8.5.2 (cli) (built: Feb  3 2026 02:26:32) (NTS)
 Copyright (c) The PHP Group
 Built by https://github.com/docker-library/php
 Zend Engine v4.5.2, Copyright (c) Zend Technologies
