@@ -2,9 +2,13 @@
 
 [![Static Badge](https://img.shields.io/badge/containerized_by-tektrans-blue)](https://tektrans.id)
 
+**WARNING: CURRENT IMAGE IS VULNERABLE (CVE-2026-109618 and CVE-2026-109619)**
+
+**WE STILL WAITING FOR DEBIAN TO PUBLISH PATCHED PHP**
+
 Unofficial WordPress extended container image with additional PHP extensions
 
-Based on: [docker.io/wordpress:6-php8.4-apache](https://hub.docker.com/_/wordpress)
+Based on: [docker.io/wordpress:6-php8.5-apache](https://hub.docker.com/_/wordpress)
 
 Our release image:
 ```
