@@ -1,5 +1,5 @@
-Server version: Apache/2.4.67 (Debian)
-Server built:   2026-06-05T10:55:53
+Server version: Apache/2.4.69 (Debian)
+Server built:   2026-10-01T16:54:08
 
 Loaded Modules:
  core_module (static)
