@@ -1,8 +1,8 @@
-PHP 8.5.12 (cli) (built: Nov  5 2026 07:20:51) (NTS)
+PHP 8.5.13 (cli) (built: Nov 19 2026 14:29:52) (NTS)
 Copyright (c) The PHP Group
 Built by https://github.com/docker-library/php
-Zend Engine v4.5.12, Copyright (c) Zend Technologies
-    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies
+Zend Engine v4.5.13, Copyright (c) Zend Technologies
+    with Zend OPcache v8.5.13, Copyright (c), by Zend Technologies
 
 [PHP Modules]
 bcmath
